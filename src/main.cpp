@@ -19,6 +19,7 @@ void setup() {
   int result = myFunction(2, 3); // example call
 }
 // test github
+
 void loop() {
   // Read and print all 6 DI pins in a single line: "D2:1 D4:0 ..."
   String out;
