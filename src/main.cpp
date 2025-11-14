@@ -8,8 +8,7 @@ int myFunction(int, int);
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial) { /* wait for Serial on native USB boards; safe for ESP32 */ }
-  Serial.println("Hello world from setup!");
+
 
   // Configure DI pins. Using INPUT_PULLUP by default — switch to INPUT if using external pull-downs.
   for (uint8_t i = 0; i < 6; ++i) {
@@ -18,7 +17,7 @@ void setup() {
 
   int result = myFunction(2, 3); // example call
 }
-// test github
+
 
 void loop() {
   // Read and print all 6 DI pins in a single line: "D2:1 D4:0 ..."
